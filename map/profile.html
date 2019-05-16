@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<meta charset="UTF-8">
+
+     <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700" rel='stylesheet' type='text/css'> 
+    <link href="assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/jquery.slider.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+	
+	<style>
+	.image-upload > input {
+	display: none;
+	}
+	@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .account-profile {
+    margin-top: -40px;
+  }
+}
+	</style>
+	
+	<title>Profile</title>
+</head>
+
+<body class="page-sub-page page-profile page-account" id="page-top">
+
+<!-- Wrapper -->
+<div class="wrapper" >
+    <!-- Navigation -->
+	
+    <div class="navigation">
+	
+        <div class="container" >
+		
+            <header class="navbar">    
+<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>			
+                        <a href="index.html"><img style ="width:50px; margin:-15px; padding:-15px;;"src="assets/img/back2.png" alt="HOME"><font style="font-style:bold; color:black;"> Home</font></a>              
+            </header>	
+        </div>   
+	
+	</div>
+	
+    <!-- end Navigation -->
+	
+    <!-- Page Content -->
+    <div id="page-content">
+        <div class="container">
+            <div class="row">
+            <!-- sidebar -->
+            <div class="col-md-3 col-sm-2">
+                <section id="sidebar">
+				  
+					 
+                   
+                    <aside>
+					 <nav class="collapse navbar-collapse bs-navbar-collapse">
+               
+                        <ul class="sidebar-navigation">
+						 <header><h3>Account</h3></header>
+                            <li class="active"><a href="profile.html"><i class="fa fa-user"></i><span>Profile</span></a></li>
+                            <li><a href="view.html"><i class="fa fa-camera"></i><span>My Post</span></a></li>
+                            <li><a href="pass.html"><i class="fa fa-lock"></i><span>Change Password</span></a></li>
+							<li><a href="../index.html" id="logout" onClick="return confirm ('Are you sure to logout?')"><i class="fa fa-key"></i><span>Log Out</span></a></li>
+                        </ul>
+						</nav>
+                    </aside>
+					
+					
+					
+                </section><!-- /#sidebar -->
+            </div><!-- /.col-md-3 -->
+            <!-- end Sidebar -->
+			
+                <!-- My Properties -->
+                <div class="col-md-9 col-sm-10">
+                    <section id="profile">
+                        
+                        <div class="account-profile">
+						
+                            <div class="row">
+							<div role="form" id="form-account-profile" method="post" >                                                                     
+                                    
+                                <div class="col-md-3 col-sm-3">
+								<div class="image-upload">
+								<label for="file-input" style="height: 250px; width: 100%;">
+								<img src="assets/img/agent-01.jpg" height="100%" width="100%" id="foto" style="border-radius: 50%;" />
+								
+
+								</label>
+								<input id="file-input" type="file" />
+								</div>
+
+                                </div>
+                                <div class="col-md-9 col-sm-9">
+								
+                                     								  
+									   <section id="contact">
+                                           <p id="status"></p>
+                                            <dl class="contact-fields">
+                                                <dt><label for="form-account-name">Username</label></dt>
+                                                <dd><div class="form-group">
+                                                    <input type="text" class="form-control" id="form-account-user" value="" readonly />
+                                                </div><!-- /.form-group --></dd>
+												<dt><label for="form-account-name">Name</label></dt>
+                                                <dd><div class="form-group">
+                                                    <input type="text" class="form-control" id="form-account-name" value="" required />
+                                                </div><!-- /.form-group --></dd>
+                                                <dt><label for="form-account-phone">Phone</label></dt>
+                                                <dd><div class="form-group">
+                                                    <input type="number" class="form-control" id="form-account-phone" value="" />
+                                                </div><!-- /.form-group --></dd>
+                                                <dt><label for="form-account-email">Email</label></dt>
+                                                <dd><div class="form-group">
+                                                    <input type="email" class="form-control" id="form-account-email" value="" required />
+                                                </div><!-- /.form-group --></dd>
+                                                
+                                            </dl>
+                                        </section>
+                                        <section id="about-me">
+                                            <label><dt>Bio</dt></label>
+                                            <div class="form-group">
+                                                <textarea class="form-control" id="form-contact-agent-message" rows="5" name="bio"></textarea>
+                                            </div><!-- /.form-group -->
+                                        </section>
+                                       <div class="form-group clearfix">
+                                                        <button type="submit" class="btn btn-default" id="form-account-password-submit">Save Profile</button>
+                                                    </div><!-- /.form-group -->
+                                   
+									</div><!-- /#form-contact -->
+                                    
+                                </div><!-- /.col-md-9 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.account-profile -->
+                    </section><!-- /#profile -->
+                </div><!-- /.col-md-9 -->
+                <!-- end My Properties -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </div>
+    <!-- end Page Content -->
+	
+    <!-- Page Footer -->
+<!--
+    <footer id="page-footer">
+        <div class="inner">
+           
+            <aside id="footer-thumbnails" class="footer-thumbnails"></aside>
+            <aside id="footer-copyright">
+                <div class="container">
+                    <span>Copyright © 2013. All Rights Reserved.</span>
+                    <span class="pull-right"><a href="#page-top" class="roll">Go to top</a></span>
+                </div>
+            </aside>
+        </div>
+    </footer>
+     end Page Footer -->
+</div>
+
+<script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="assets/js/icheck.min.js"></script>
+<script type="text/javascript" src="assets/js/retina-1.1.0.min.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
+<script type="text/javascript" src="js/profile.js"></script>
+<script type="text/javascript" src="../cordova.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<!-- <script type="text/javascript" src="js/HanyaAngka.js"></script> -->
+<script type="text/javascript" src="js/foto.js"></script>
+
+
+
+</body>
+</html>
